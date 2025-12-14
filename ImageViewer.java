@@ -44,6 +44,8 @@ public class ImageViewer
         currentImage = null;
         filters = createFilters();
         makeFrame();
+        
+        
     }
 
 
@@ -255,6 +257,10 @@ public class ImageViewer
         filterList.add(new GrayScaleFilter("Grayscale"));
         filterList.add(new EdgeFilter("Edge Detection"));
         filterList.add(new FishEyeFilter("Fish Eye"));
+        filterList.add(new BlueFilter("Blue Filter"));
+        filterList.add(new RedTInt("Red Tint"));
+        filterList.add(new GreenTint("Green Tint"));
+        
        
         return filterList;
     }
